@@ -1,135 +1,65 @@
-(function(window) {
+$(document).ready(function () {
 
-  'use strict';
 
-  /**
-   * Extend Object helper function.
-   */
-  function extend(a, b) {
-    for(var key in b) { 
-      if(b.hasOwnProperty(key)) {
-        a[key] = b[key];
-      }
-    }
-    return a;
-  }
+    //stick in the fixed 100% height behind the navbar but don't wrap it
+    $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
+  
+    $('#slide-nav.navbar-default').after($('<div id="navbar-height-col"></div>'));  
 
-  /**
-   * Each helper function.
-   */
-  function each(collection, callback) {
-    for (var i = 0; i < collection.length; i++) {
-      var item = collection[i];
-      callback(item);
-    }
-  }
+    // Enter your ids or classes
+    var toggler = '.navbar-toggle';
+    var pagewrapper = '#page-content';
+    var navigationwrapper = '.navbar-header';
+    var menuwidth = '100%'; // the menu inside the slide menu itself
+    var slidewidth = '0%';
+    var menuneg = '-100%';
+    var slideneg = '-80%';
 
-  /**
-   * Menu Constructor.
-   */
-  function Menu(options) {
-    this.options = extend({}, this.options);
-    extend(this.options, options);
-    this._init();
-  }
 
-  /**
-   * Menu Options.
-   */
-  Menu.prototype.options = {
-    wrapper: '#o-wrapper',          // The content wrapper
-    type: 'slide-left',             // The menu type
-    menuOpenerClass: '.c-button',   // The menu opener class names (i.e. the buttons)
-    maskId: '#c-mask'               // The ID of the mask
-  };
+    $("#slide-nav").on("click", toggler, function (e) {
 
-  /**
-   * Initialise Menu.
-   */
-  Menu.prototype._init = function() {
-    this.body = document.body;
-    this.wrapper = document.querySelector(this.options.wrapper);
-    this.mask = document.querySelector(this.options.maskId);
-    this.menu = document.querySelector('#c-menu--' + this.options.type);
-    this.closeBtn = this.menu.querySelector('.c-menu__close');
-    this.menuOpeners = document.querySelectorAll(this.options.menuOpenerClass);
-    this._initEvents();
-  };
+        var selected = $(this).hasClass('slide-active');
 
-  /**
-   * Initialise Menu Events.
-   */
-  Menu.prototype._initEvents = function() {
-    // Event for clicks on the close button inside the menu.
-    this.closeBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.close();
-    }.bind(this));
+        $('#slidemenu').stop().animate({
+            left: selected ? menuneg : '0px'
+        });
 
-    // Event for clicks on the mask.
-    this.mask.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.close();
-    }.bind(this));
-  };
+        $('#navbar-height-col').stop().animate({
+            left: selected ? slideneg : '0px'
+        });
 
-  /**
-   * Open Menu.
-   */
-  Menu.prototype.open = function() {
-    this.body.classList.add('has-active-menu');
-    this.wrapper.classList.add('has-' + this.options.type);
-    this.menu.classList.add('is-active');
-    this.mask.classList.add('is-active');
-    this.disableMenuOpeners();
-  };
+        $(pagewrapper).stop().animate({
+            left: selected ? '0px' : slidewidth
+        });
 
-  /**
-   * Close Menu.
-   */
-  Menu.prototype.close = function() {
-    this.body.classList.remove('has-active-menu');
-    this.wrapper.classList.remove('has-' + this.options.type);
-    this.menu.classList.remove('is-active');
-    this.mask.classList.remove('is-active');
-    this.enableMenuOpeners();
-  };
+        $(navigationwrapper).stop().animate({
+            left: selected ? '0px' : slidewidth
+        });
 
-  /**
-   * Disable Menu Openers.
-   */
-  Menu.prototype.disableMenuOpeners = function() {
-    each(this.menuOpeners, function(item) {
-      item.disabled = true;
+
+        $(this).toggleClass('slide-active', !selected);
+        $('#slidemenu').toggleClass('slide-active');
+
+
+        $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+
+
     });
-  };
 
-  /**
-   * Enable Menu Openers.
-   */
-  Menu.prototype.enableMenuOpeners = function() {
-    each(this.menuOpeners, function(item) {
-      item.disabled = false;
+
+    var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
+
+
+    $(window).on("resize", function () {
+
+        if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
+            $(selected).removeClass('slide-active');
+        }
+
+
     });
-  };
 
-  /**
-   * Add to global namespace.
-   */
-  window.Menu = Menu;
 
-})(window);
 
-var slideLeft = new window.Menu({
-  wrapper: '#o-wrapper',
-  type: 'slide-left',
-  menuOpenerClass: '.c-button',
-  maskId: '#c-mask'
-});
 
-var slideLeftBtn = document.querySelector('#c-button--slide-left');
-
-slideLeftBtn.addEventListener('click', function(e) {
-  e.preventDefault;
-  slideLeft.open();
 });
