@@ -1,3 +1,8 @@
+html, body {
+	height: 100%;
+	overflow-y: hidden;
+}
+
 .divide-10, .divide-20, .divide-30, .divide-40, .divide-50, .divide-60, .divide-70, .divide-80, .divide-90, .divide-100 {
 	float: left;
 }
@@ -33,6 +38,7 @@
 	width: 100%;
 }
 
+
 .resize {
 	background-image: url("../pics/sky.jpg");
 	height: 200px;
@@ -44,4 +50,22 @@
 	background-position: center 85%;
 
 }
+}
+
+#overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 2;
+}
+
+nav {
+	position: absolute;
+	height: 100%;
+	width: 25%;
+	background-color: yellow;
+	z-index: 3;
+
 }
