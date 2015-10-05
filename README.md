@@ -6,5 +6,3 @@ Design for "Bostadsrättsföreningen"
 Hej
 
 [Hejsan alla barn](http://google.com)
-
-
