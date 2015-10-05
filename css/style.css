@@ -32,3 +32,16 @@
 .divide-100 {
 	width: 100%;
 }
+
+.resize {
+	background-image: url("../pics/sky.jpg");
+	height: 200px;
+	background-size: cover;
+	background-position: center 90%; /*-550px;*/
+}
+@media only screen and (orientation : landscape) { 
+.resize {
+	background-position: center 85%;
+
+}
+}
