@@ -45,11 +45,12 @@ html, body {
 	background-size: cover;
 	background-position: center 90%; /*-550px;*/
 }
-@media only screen and (orientation : landscape) { 
-.resize {
-	background-position: center 85%;
 
-}
+@media only screen and (orientation : landscape) { 
+	.resize {
+		background-position: center 85%;
+
+	}
 }
 
 #overlay {
@@ -67,4 +68,15 @@ nav {
 	width: 50%;
 	background-color: yellow;
 	z-index: 3;
+}
+
+nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav > ul > li {
+	list-style: none;
+	padding: 25px;
+	font-size: 2em;
 }
