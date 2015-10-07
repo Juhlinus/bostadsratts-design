@@ -58,10 +58,7 @@ p {
 	background-image: url("../pics/autumn.jpg");
 	height: 200px;
 	background-size: cover;
-	background-position: top; 
-	padding: 0 !important;
-	margin: 0;
-	
+	background-position: center 50%; 
 }
 .resize {
 	background-image: url("../pics/sky.jpg");
@@ -76,7 +73,11 @@ p {
 	}
 	 .contactpic {
 	 	background-position: center 30%;
-}
+	 	height: 150px;
+	 	}
+/*	 #container {
+	 	font-size: 15px;
+	 }*/
 }
 
 
