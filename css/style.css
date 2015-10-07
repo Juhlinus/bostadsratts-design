@@ -1,6 +1,7 @@
 html, body {
 	height: 100%;
-	overflow-y: hidden;
+	margin: 0px;
+	padding: 0px;
 }
 
 p {
@@ -48,7 +49,15 @@ p {
 	width: 100%;
 }
 
-
+.contactpic {
+	background-image: url("../pics/autumn.jpg");
+	height: 200px;
+	background-size: cover;
+	background-position: top; 
+	padding: 0 !important;
+	margin: 0;
+	
+}
 .resize {
 	background-image: url("../pics/sky.jpg");
 	height: 200px;
@@ -60,7 +69,11 @@ p {
 	.resize {
 		background-position: center 85%;
 	}
+	 .contactpic {
+	 	background-position: center 30%;
 }
+}
+
 
 #overlay {
 	position: absolute;
