@@ -3,6 +3,16 @@ html, body {
 	overflow-y: hidden;
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.fa {
+	color: #5A5A5A;
+	font-size: 1.5em;
+}
+
 .divide-10, .divide-20, .divide-30, .divide-40, .divide-50, .divide-60, .divide-70, .divide-80, .divide-90, .divide-100 {
 	float: left;
 }
@@ -49,7 +59,6 @@ html, body {
 @media only screen and (orientation : landscape) { 
 	.resize {
 		background-position: center 85%;
-
 	}
 }
 
@@ -66,7 +75,7 @@ nav {
 	position: absolute;
 	height: 100%;
 	width: 50%;
-	background-color: yellow;
+	background-color: #F2F2F2;
 	z-index: 3;
 }
 
@@ -79,6 +88,7 @@ nav > ul > li {
 	list-style: none;
 	padding: 25px;
 	font-size: 5vw;
+
 }
 textarea{
     resize: none;
@@ -89,4 +99,31 @@ h1{
 }
 fieldset{
     border: none;
+
+	color: #5A5A5A;
+}
+
+nav > ul > li:nth-child(odd) {
+	background-color: #E4E4E4;
+}
+
+nav > ul > li:first-child {
+	padding: 25px;
+	font-size: 2vw;
+	background-color: transparent;
+	width: 100%
+}
+
+.header {
+	position: absolute;
+	z-index: 4;
+	background-color: lightgray;
+	padding: 2px;
+	padding-left: 25px;
+	font-size: 2em;
+}
+
+.top-margin {
+	margin-top: 30px;
+
 }
