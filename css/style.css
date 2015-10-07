@@ -2,6 +2,7 @@ html, body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -127,12 +128,29 @@ nav > ul > li:nth-child(odd) {
 	background-color: #E4E4E4;
 }
 
+.fa.cross {
+	float: right;
+    font-size: 1.25em;
+    position: relative;
+    bottom: 35px;
+    left: 25px;
+    padding: 15px;
+    color: #606060;
+}
+
+.fa.bars {
+	position: relative;
+	left: 20px;
+	padding-right: 25px;
+}
+
+.header > h1 {
+	display: inline-block;
+}
+
 /*
-nav > ul > li:first-child {
-	padding: 45px;
-	font-size: 2vw;
-	background-color: transparent;
-	width: 100%
+nav > ul > li:first-child::after {
+
 }
 */
 /*
