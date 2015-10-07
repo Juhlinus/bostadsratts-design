@@ -3,6 +3,11 @@ html, body {
 	overflow-y: hidden;
 }
 
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
 p {
 	margin: 0;
 	padding: 0;
@@ -117,7 +122,7 @@ nav > ul > li:first-child {
 .header {
 	position: absolute;
 	z-index: 4;
-	background-color: lightgray;
+	background-color: transparent;
 	font-size: 2em;
 }
 
@@ -126,5 +131,6 @@ nav > ul > li:first-child {
 }
 
 .top-margin {
-	margin-top: 30px;
+	margin-top: 10px;
+	padding-left: 125px;
 }
