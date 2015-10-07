@@ -10,7 +10,7 @@ p {
 
 .fa {
 	color: #5A5A5A;
-	font-size: 1.5em;
+	font-size: 1.75em;
 }
 
 .divide-10, .divide-20, .divide-30, .divide-40, .divide-50, .divide-60, .divide-70, .divide-80, .divide-90, .divide-100 {
@@ -118,9 +118,11 @@ nav > ul > li:first-child {
 	position: absolute;
 	z-index: 4;
 	background-color: lightgray;
-	padding: 2px;
-	padding-left: 25px;
 	font-size: 2em;
+}
+
+.header .fa {
+	padding-left: 25px;
 }
 
 .top-margin {
