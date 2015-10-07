@@ -4,11 +4,7 @@ var doNavbarSlide = function() {
 };
 
 $(function() {
-	$('.bars').click(function() {
-		doNavbarSlide();
-	});
-
-	$('.cross').click(function() {
+	$('.bars, .cross, #overlay').click(function() {
 		doNavbarSlide();
 	});
 });
