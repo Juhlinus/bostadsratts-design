@@ -10,6 +10,7 @@ p {
 
 .fa {
 	color: #5A5A5A;
+	font-size: 1.5em;
 }
 
 .divide-10, .divide-20, .divide-30, .divide-40, .divide-50, .divide-60, .divide-70, .divide-80, .divide-90, .divide-100 {
@@ -95,8 +96,7 @@ nav > ul > li:nth-child(odd) {
 }
 
 nav > ul > li:first-child {
-	padding: 20px;
-	padding-left: 25px;
+	padding: 25px;
 	font-size: 2vw;
 	background-color: transparent;
 	width: 100%
