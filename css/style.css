@@ -84,12 +84,6 @@ nav > ul {
 	padding: 0;
 }
 
-nav > ul > li {
-	list-style: none;
-	padding: 25px;
-	font-size: 5vw;
-
-}
 textarea{
     resize: none;
 }
@@ -101,6 +95,12 @@ fieldset{
     border: none;
 
 	color: #5A5A5A;
+}
+
+nav > ul > li {
+	list-style: none;
+	padding: 25px;
+	font-size: 4vw;
 }
 
 nav > ul > li:nth-child(odd) {
