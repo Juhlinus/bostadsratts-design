@@ -157,3 +157,6 @@ nav > ul > li:first-child {
 	background-color: black;
 	color: white;
 }
+label {
+	color: blue;
+}
