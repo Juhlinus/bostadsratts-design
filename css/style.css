@@ -49,7 +49,6 @@ html, body {
 @media only screen and (orientation : landscape) { 
 	.resize {
 		background-position: center 85%;
-
 	}
 }
 
@@ -66,7 +65,7 @@ nav {
 	position: absolute;
 	height: 100%;
 	width: 50%;
-	background-color: yellow;
+	background-color: #F2F2F2;
 	z-index: 3;
 }
 
@@ -79,4 +78,9 @@ nav > ul > li {
 	list-style: none;
 	padding: 25px;
 	font-size: 5vw;
+	color: #5A5A5A;
+}
+
+nav > ul > li:nth-child(odd) {
+	background-color: #E4E4E4;
 }
