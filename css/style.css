@@ -4,14 +4,19 @@ html, body {
 	padding: 0px;
 }
 
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
 p {
 	margin: 0;
 	padding: 0;
 }
 
 .fa {
-	color: #5A5A5A;
-	font-size: 1.5em;
+	color: white;
+	font-size: 2.5em;
 }
 
 .divide-10, .divide-20, .divide-30, .divide-40, .divide-50, .divide-60, .divide-70, .divide-80, .divide-90, .divide-100 {
@@ -90,6 +95,7 @@ nav {
 	width: 50%;
 	background-color: #F2F2F2;
 	z-index: 3;
+	display: none;
 }
 
 nav > ul {
@@ -97,12 +103,6 @@ nav > ul {
 	padding: 0;
 }
 
-nav > ul > li {
-	list-style: none;
-	padding: 25px;
-	font-size: 5vw;
-
-}
 textarea{
     resize: none;
 }
@@ -116,27 +116,43 @@ fieldset{
 	color: #5A5A5A;
 }
 
+nav > ul > li {
+	list-style: none;
+	padding: 25px;
+	font-size: 4vw;
+}
+
 nav > ul > li:nth-child(odd) {
 	background-color: #E4E4E4;
 }
 
+/*
 nav > ul > li:first-child {
-	padding: 25px;
+	padding: 45px;
 	font-size: 2vw;
 	background-color: transparent;
 	width: 100%
 }
-
+*/
+/*
 .header {
 	position: absolute;
 	z-index: 4;
-	background-color: lightgray;
-	padding: 2px;
-	padding-left: 25px;
+	background-color: transparent;
 	font-size: 2em;
 }
 
-.top-margin {
-	margin-top: 30px;
+.header .fa {
+	padding-left: 25px;
+}
+*/
 
+.top-margin {
+	margin-top: 5px;
+	padding-left: 15px;
+}
+
+.header {
+	background-color: black;
+	color: white;
 }
