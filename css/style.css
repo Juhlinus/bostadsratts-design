@@ -3,6 +3,15 @@ html, body {
 	overflow-y: hidden;
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.fa {
+	color: #5A5A5A;
+}
+
 .divide-10, .divide-20, .divide-30, .divide-40, .divide-50, .divide-60, .divide-70, .divide-80, .divide-90, .divide-100 {
 	float: left;
 }
@@ -83,4 +92,25 @@ nav > ul > li {
 
 nav > ul > li:nth-child(odd) {
 	background-color: #E4E4E4;
+}
+
+nav > ul > li:first-child {
+	padding: 20px;
+	padding-left: 25px;
+	font-size: 2vw;
+	background-color: transparent;
+	width: 100%
+}
+
+.header {
+	position: absolute;
+	z-index: 4;
+	background-color: lightgray;
+	padding: 2px;
+	padding-left: 25px;
+	font-size: 2em;
+}
+
+.top-margin {
+	margin-top: 30px;
 }
