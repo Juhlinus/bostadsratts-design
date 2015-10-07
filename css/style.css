@@ -43,7 +43,7 @@ html, body {
 	background-image: url("../pics/sky.jpg");
 	height: 200px;
 	background-size: cover;
-	background-position: center 90%; /*-550px;*/
+	background-position: center 90%; 
 }
 
 @media only screen and (orientation : landscape) { 
@@ -79,4 +79,14 @@ nav > ul > li {
 	list-style: none;
 	padding: 25px;
 	font-size: 5vw;
+}
+textarea{
+    resize: none;
+}
+h1{
+    font-weight: bolder;
+    color: red;
+}
+fieldset{
+    border: none;
 }

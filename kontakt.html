@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Här är det jag som bestämmer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kontakt.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile.css" rel="stylesheet" media="screen and (max-width: 480px)">
+    <link rel="shortcut icon" href="../pics/favicon.jpg">
+    <link rel="icon" sizes="192x192" href="../pics/favicon.jpg">
+    <link rel="icon" sizes="16x16" href="../pics/favicon.jpg"> <!-- accepted size for firefox-->
+    
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="header">
+                <h1>Kontakta oss!</h1>
+            </div>
+           
+            <div>
+            <form action="" method="post">
+                <fieldset>
+                    
+                    <p>Ärendetyp</p>
+                    <select name="errand">
+                        <option  value="Kontakta expeditionen">Kontakta expeditionen</option>
+                        <option value="Felanmälan">Felanmälan</option>
+                        <option value="Övrigt">Övrigt</option>
+                    </select>
+                    <p><label for="name">Ange ditt namn</label></p>
+                    <input type="text" name="name" placeholder="Namn">
+                    </p>
+                    <p><label for="tel">Ange ditt telefonnummer</label></p>
+                    <input type="tel" name="tel" placeholder="Telefonnummer">
+                    <p>
+                     <p><label for="email">Ange din epost-adress</label></p>
+                    <p>
+                    <input type="email" name="email" placeholder="E-postadress">
+                    </p>
+                    <p>
+                        <label for="qa">Fråga</label>
+                    </p>
+                    <textarea name="question" type="text" placeholder="Beskriv ditt ärende" rows="10" cols="50"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Hur vill du bli kontaktad?</legend>
+                    <div class="checkbox">
+                    <label><input type="checkbox" name="contact[]" value="email">Mejl</label>
+                    <label><input type="checkbox" name="contact[]" value="tele">Telefon</label>
+                    </div>
+                </fieldset>
+                <input type="submit" name="submit" value="submit">
+            <input type="reset" name="reset" value="reset">
+            </form>
+            
+           <h1>Hejsan allihopa</h1> 
+            </div>
+        </div>
+        <div id="footer">
+            
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ 
+</body>
+
+</html>
