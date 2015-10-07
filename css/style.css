@@ -97,7 +97,6 @@ nav {
 	width: 50%;
 	background-color: #F2F2F2;
 	z-index: 3;
-	display: none;
 }
 
 nav > ul {
@@ -138,6 +137,10 @@ nav > ul > li:nth-child(odd) {
     color: #606060;
 }
 
+.fa.cross:hover, .fa.bars:hover {
+	cursor: pointer;
+}
+
 .fa.bars {
 	position: relative;
 	left: 20px;
@@ -148,23 +151,13 @@ nav > ul > li:nth-child(odd) {
 	display: inline-block;
 }
 
-/*
-nav > ul > li:first-child::after {
-
-}
-*/
-/*
-.header {
-	position: absolute;
-	z-index: 4;
-	background-color: transparent;
-	font-size: 2em;
+.toggle-nav {
+	left: -50%;
 }
 
-.header .fa {
-	padding-left: 25px;
+.toggle-overlay {
+	display: none;
 }
-*/
 
 .top-margin {
 	margin-top: 5px;
