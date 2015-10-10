@@ -87,7 +87,6 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.5;
 	z-index: 2;
 }
 
@@ -97,6 +96,7 @@ nav {
 	width: 50%;
 	background-color: #F2F2F2;
 	z-index: 3;
+	left: -50%;
 }
 
 nav > ul {
@@ -151,12 +151,44 @@ nav > ul > li:nth-child(odd) {
 	display: inline-block;
 }
 
-.toggle-nav {
-	left: -50%;
+.overlay-on {
+	opacity: 0;
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition:all 1s;
 }
 
-.toggle-overlay {
+.overlay-off {
+	opacity: 0.5;
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition:all 1s;
+}
+
+.display-on {
+	display: inline;
+}
+
+.display-off {
 	display: none;
+}
+
+.nav-on {
+	left: 0%;
+ 	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition:all 1s;
+}
+
+.nav-off {
+	left: -50%;
+ 	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition:all 1s;
 }
 
 .top-margin {
