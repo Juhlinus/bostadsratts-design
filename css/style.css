@@ -153,42 +153,45 @@ nav > ul > li:nth-child(odd) {
 
 .overlay-on {
 	opacity: 0;
-	-webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition:all 1s;
+	-webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 .overlay-off {
 	opacity: 0.5;
-	-webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition:all 1s;
+	-webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.overlay-on, .overlay-off {
 }
 
 .display-on {
-	display: inline;
+	visibility: visible;
 }
 
 .display-off {
-	display: none;
+	visibility: hidden;
 }
 
 .nav-on {
 	left: 0%;
- 	-webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition:all 1s;
+ 	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition:all 0.5s ease;
 }
 
 .nav-off {
 	left: -50%;
- 	-webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition:all 1s;
+ 	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition:all 0.5s ease;
 }
 
 .top-margin {
