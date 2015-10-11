@@ -216,9 +216,9 @@ label {
 	margin-left: 10px;
 }
 input.invalid, textarea.invalid{
-	border: 2px solid red;
+	border: 3px solid red;
 }
 
 input.valid, textarea.valid{
-	border: 2px solid green;
+	border: 3px solid green;
 }
