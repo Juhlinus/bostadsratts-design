@@ -1,36 +1,54 @@
 $(document).ready(function()
 	{
+		var inputName;
+		var inputTel;
+		var inputQue;
+		
 		$("#contact_name").on("input", function()
 		{
-			var input=$(this);
-			var nameForm=input.val(); 
+			inputName = $(this);
+			var nameForm=inputName.val(); 
 			console.log(nameForm);
-			if(nameForm){input.removeClass("invalid").addClass("valid");}
-			else{input.removeClass("valid").addClass("invalid");}
+			if(nameForm){inputName.removeClass("invalid").addClass("valid");}
+			else{inputName.removeClass("valid").addClass("invalid");}
 		});
 		$("#contact_tel").on("input", function()
 		{
-			var input=$(this);
-			var telForm=input.val();
+			inputTel=$(this);
+			var telForm=inputTel.val();
 			console.log(telForm);
-			if(telForm){input.removeClass("invalid").addClass("valid");}
-			else{input.removeClass("valid").addClass("invalid");}
+			if(telForm){inputTel.removeClass("invalid").addClass("valid");}
+			else{inputTel.removeClass("valid").addClass("invalid");}
 		});
 		$("#contact_email").on("input", function()
 		{
-			var input=$(this);
-			var emailForm=input.val();
+			var inputEmail=$(this);
+			var emailForm=inputEmail.val();
 			console.log(emailForm);
-			if(emailForm){input.removeClass("invalid").addClass("valid");}
-			else{input.removeClass("valid").addClass("invalid");}
+			if(emailForm){inputEmail.removeClass("invalid").addClass("valid");}
+			else{inputEmail.removeClass("valid").addClass("invalid");}
 		});
 		$("#contact_que").on("input",function()
 		{
-			var input=$(this);
-			var queForm=input.val();
+			inputQue=$(this);
+			var queForm=inputQue.val();
 			console.log(queForm);
-			if(queForm){input.addClass("valid").removeClass("invalid");}
-			else{input.addClass("invalid").removeClass("valid");}
+			if(queForm){inputQue.addClass("valid").removeClass("invalid");}
+			else{inputQue.addClass("invalid").removeClass("valid");}
 		});
+		$("form").submit(function(event)
+		{
+			if(inputName.hasClass("invalid") || inputTel.hasClass("invalid") || inputQue.hasClass("invalid"))
+			{
+				event.preventDefault();
+				console.log("hejsan");
+			}
+			else
+			{
+				console.log("Vi kontaktar dig inom 3 arbetsdagar.");
+			}
+			
+		});
+			
+	});	
 
-});

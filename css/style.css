@@ -228,6 +228,6 @@ input.valid, textarea.valid{
 
 fieldset
 {
-	border: 1px solid red;
-	width: 70%;
+	border: 1px hidden red;
+	
 }
