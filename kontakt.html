@@ -26,40 +26,40 @@
             <div>
             <form id="contact" action="" method="post">
                 <fieldset>
-                    <p>Ärendetyp</p>
+                    <p><h4>Ärendetyp</h4></p>
                     <select name="errand">
                         <option  value="Kontakta expeditionen">Kontakta expeditionen</option>
                         <option value="Felanmälan">Felanmälan</option>
                         <option value="Övrigt">Övrigt</option>
                     </select>
-                    <p><label for="contact_name">Ange ditt namn:</label></p>
+                    <p><label for="contact_name"><h4>Ange ditt namn:</h4></label></p>
                     <p><input type="text" id="contact_name" name="contact_name" placeholder="Namn"></p>
                     <span class="error">Vänligen fyll i ditt namn!</span>
                     
-                    <p><label for="contact_tel">Ange ditt telefonnummer:</label></p>
+                    <p><label for="contact_tel"><h4>Ange ditt telefonnummer:</h4></label></p>
                     <p><input type="tel" id="contact_tel" name="contact_tel" placeholder="Telefonnummer"></p>
                     <span class="error">Vänligen fyll i ditt telefonnummer!</span>
                     
-                    <p><label for="email">Ange din epost-adress</label></p>
+                    <p><label for="email"><h4>Ange din epost-adress</h4></label></p>
                     <p><input type="email" id="contact_email" name="email" placeholder="E-postadress"></p>
                     
                     
-                    <p><label for="contact_question">Fråga</label></p>
-                    <textarea id="contact_que" name="contact_question" type="text" placeholder="Beskriv ditt ärende" rows="10" cols="50"></textarea>
+                    <p><label for="contact_question"><h4>Fråga</h4></label></p>
+                    <textarea id="contact_que" name="contact_question" type="text" placeholder="Beskriv ditt ärende" rows="10" cols="40"></textarea>
                     <p><span class="error">Vänligen beskriv ditt ärende!</span></p>
                     
                 
                 
                     
                     <div class="checkbox">
-                    <legend>Hur vill du bli kontaktad?</legend>
+                    <legend><h3>Hur vill du bli kontaktad?</h3></legend>
                     <label><input type="checkbox" name="contact[]" value="email" checked>Mejl</label>
                     <label><input type="checkbox" name="contact[]" value="tele">Telefon</label>
                     </div>
                 </fieldset>
                 
-                <input type="submit" id="contact_submit" name="submit" value="submit">
-            <input type="reset" name="reset" value="reset">
+                <input type="submit" id="contact_submit" name="submit" value="Skicka in">
+            <input type="reset" name="reset" value="Återställ" id="resetform">
             </fieldset>
             </form>
             

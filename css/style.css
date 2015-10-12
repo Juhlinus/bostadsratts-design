@@ -231,3 +231,8 @@ fieldset
 	border: 1px hidden red;
 	
 }
+#resetform
+{
+	position: relative;
+    left: 30px;
+}

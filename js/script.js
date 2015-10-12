@@ -3,6 +3,7 @@ $(document).ready(function()
 		var inputName;
 		var inputTel;
 		var inputQue;
+		var inputEmail;
 		
 		$("#contact_name").on("input", function()
 		{
@@ -22,7 +23,7 @@ $(document).ready(function()
 		});
 		$("#contact_email").on("input", function()
 		{
-			var inputEmail=$(this);
+			inputEmail=$(this);
 			var emailForm=inputEmail.val();
 			console.log(emailForm);
 			if(emailForm){inputEmail.removeClass("invalid").addClass("valid");}
@@ -37,8 +38,9 @@ $(document).ready(function()
 			else{inputQue.addClass("invalid").removeClass("valid");}
 		});
 		$("form").submit(function(event)
-		{
-			if(inputName.hasClass("invalid") || inputTel.hasClass("invalid") || inputQue.hasClass("invalid"))
+		{	console.log(inputEmail);
+		console.log(inputEmail.hasClass("invalid"));
+			if(inputName.hasClass("invalid") || inputTel.hasClass("invalid") || inputQue.hasClass("invalid") || inputEmail.hasClass("invalid"))
 			{
 				event.preventDefault();
 				console.log("hejsan");
@@ -49,6 +51,7 @@ $(document).ready(function()
 			}
 			
 		});
+
 			
-	});	
+});	
 
