@@ -26,8 +26,8 @@ $(document).ready(function() {
 		validate(inputQue, queForm);
 	});
 	$("form").submit(function(event) { //------------------------- Submit button
-		
-		
+
+
 		if (inputName === undefined) //------------------------- If the inputName is undefined 
 			inputName = $("#contact_name"); //------------------------- Assign inputName the object
 		if (inputTel === undefined)
@@ -38,6 +38,9 @@ $(document).ready(function() {
 			inputQue = $("#contact_que");
 
 		validate(inputTel, inputTel.val()); //------------------------- Validate inputTel, line 51
+		validate(inputName, inputName.val());
+		validate(inputEmail, inputEmail.val());
+		validate(inputQue, inputQue.val());
 		if (inputName.hasClass("invalid") || inputTel.hasClass("invalid") || inputQue.hasClass("invalid") || inputEmail.hasClass("invalid")) {
 			event.preventDefault();
 			console.log("hejsan");
@@ -48,14 +51,20 @@ $(document).ready(function() {
 
 	});
 
-function validate(input, text) { 
-	if (text) { //------------------------- if the user typed anything
-		input.removeClass("invalid").addClass("valid");
+	function validate(input, text) {
+		if (text) { //------------------------- if the user typed anything
+			input.removeClass("invalid").addClass("valid");
 
-	}
-	else {
-		input.removeClass("valid").addClass("invalid");
+		}
+		else {
+			input.removeClass("valid").addClass("invalid");
 
+		}
 	}
-}
+		$("#resetform").click(function() {
+			$("input, textarea").removeClass()
+			
+	});
+
+
 });

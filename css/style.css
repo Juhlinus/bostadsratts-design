@@ -109,13 +109,12 @@ textarea{
 }
 h1{
     font-weight: bolder;
-    color: red;
+    color: blue;
 }
 fieldset{
     border: none;
-
 	color: #5A5A5A;
-}
+	}
 
 nav > ul > li {
 	list-style: none;
@@ -226,13 +225,21 @@ input.valid, textarea.valid{
 	border: 3px solid green;
 }
 
-fieldset
-{
-	border: 1px hidden red;
-	
+/*input.standard, textarea.standard{
+	border: 3px solid blue;
 }
+
+/*fieldset
+{
+	border: 1px hidden white;
+	
+}*/
 #resetform
 {
 	position: relative;
     left: 30px;
+}
+form
+{
+	margin-bottom: 10%;
 }
