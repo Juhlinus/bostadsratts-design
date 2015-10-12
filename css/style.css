@@ -206,13 +206,13 @@ nav > ul > li:nth-child(odd) {
 label {
 	color: blue;
 }
-.error{
-	/*display:none;*/
+/*.error{
+	display:none;
 	color: green;
-	/*margin-left: 10px;*/
+	margin-left: 10px;
 	float: right;
 	margin-top: -25px;
-}		
+}	*/	
 
 .error_show{
 	color: red;
