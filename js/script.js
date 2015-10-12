@@ -3,7 +3,7 @@ $(document).ready(function()
 		$("#contact_name").on("input", function()
 		{
 			var input=$(this);
-			var nameForm=input.val(); //input value
+			var nameForm=input.val(); 
 			console.log(nameForm);
 			if(nameForm){input.removeClass("invalid").addClass("valid");}
 			else{input.removeClass("valid").addClass("invalid");}
@@ -32,6 +32,5 @@ $(document).ready(function()
 			if(queForm){input.addClass("valid").removeClass("invalid");}
 			else{input.addClass("invalid").removeClass("valid");}
 		});
-});
 
-	
+});

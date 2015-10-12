@@ -207,8 +207,11 @@ label {
 	color: blue;
 }
 .error{
-	display: none;
-	margin-left: 10px;
+	/*display:none;*/
+	color: green;
+	/*margin-left: 10px;*/
+	float: right;
+	margin-top: -25px;
 }		
 
 .error_show{
@@ -221,4 +224,10 @@ input.invalid, textarea.invalid{
 
 input.valid, textarea.valid{
 	border: 3px solid green;
+}
+
+fieldset
+{
+	border: 1px solid red;
+	width: 70%;
 }
