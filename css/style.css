@@ -1,6 +1,23 @@
 html, body {
 	height: 100%;
-	overflow-y: hidden;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.fa {
+	color: white;
+	font-size: 9vw;
 }
 
 .divide-10, .divide-20, .divide-30, .divide-40, .divide-50, .divide-60, .divide-70, .divide-80, .divide-90, .divide-100 {
@@ -38,34 +55,195 @@ html, body {
 	width: 100%;
 }
 
-
+.contactpic {
+	background-image: url("../pics/autumn.jpg");
+	height: 200px;
+	background-size: cover;
+	background-position: center 50%; 
+}
 .resize {
 	background-image: url("../pics/sky.jpg");
 	height: 200px;
 	background-size: cover;
-	background-position: center 90%; /*-550px;*/
+	background-position: center 90%; 
 }
-@media only screen and (orientation : landscape) { 
-.resize {
-	background-position: center 85%;
 
+@media only screen and (orientation : landscape) { 
+	.resize {
+		background-position: center 85%;
+	}
+	 .contactpic {
+	 	background-position: center 30%;
+	 	height: 150px;
+	 	}
+/*	 #container {
+	 	font-size: 15px;
+	 }*/
 }
-}
+
 
 #overlay {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.5;
 	z-index: 2;
 }
 
 nav {
 	position: absolute;
 	height: 100%;
-	width: 25%;
-	background-color: yellow;
+	width: 50%;
+	background-color: #F2F2F2;
 	z-index: 3;
+	left: -50%;
+}
 
+nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+textarea{
+    resize: none;
+}
+h1{
+    font-weight: bolder;
+    color: blue;
+}
+fieldset{
+    border: none;
+	color: #5A5A5A;
+	}
+
+nav > ul > li {
+	list-style: none;
+	padding: 25px;
+	font-size: 4vw;
+}
+
+nav > ul > li:nth-child(odd) {
+	background-color: #E4E4E4;
+}
+
+.fa.cross {
+	float: right;
+    font-size: 1.25em;
+    position: relative;
+    bottom: 35px;
+    left: 25px;
+    padding: 15px;
+    color: #606060;
+}
+
+.fa.cross:hover, .fa.bars:hover {
+	cursor: pointer;
+}
+
+.fa.bars {
+	position: relative;
+	left: 20px;
+	padding-right: 25px;
+	float: left;
+}
+
+.header > h1 {
+	display: inline-block;
+	font-size: 6vw;
+}
+
+.overlay-on {
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.overlay-off {
+	opacity: 0.5;
+	-webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.overlay-on, .overlay-off {
+}
+
+.display-on {
+	visibility: visible;
+}
+
+.display-off {
+	visibility: hidden;
+}
+
+.nav-on {
+	left: 0%;
+ 	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition:all 0.5s ease;
+}
+
+.nav-off {
+	left: -50%;
+ 	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition:all 0.5s ease;
+}
+
+.top-margin {
+	margin-top: 5px;
+	padding-left: 15px;
+}
+
+.header {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+label {
+	color: blue;
+}
+/*.error{
+	display:none;
+	color: green;
+	margin-left: 10px;
+	float: right;
+	margin-top: -25px;
+}	*/	
+
+.error_show{
+	color: red;
+	margin-left: 10px;
+}
+input.invalid, textarea.invalid{
+	border: 3px solid red;
+}
+
+input.valid, textarea.valid{
+	border: 3px solid green;
+}
+
+/*input.standard, textarea.standard{
+	border: 3px solid blue;
+}
+
+/*fieldset
+{
+	border: 1px hidden white;
+	
+}*/
+#resetform
+{
+	position: relative;
+    left: 30px;
+}
+form
+{
+	margin-bottom: 10%;
 }
