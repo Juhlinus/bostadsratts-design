@@ -156,7 +156,6 @@ p {
 	 }*/
 }
 
-
 #overlay {
 	position: absolute;
 	height: 100%;
@@ -341,3 +340,18 @@ form
     margin-top: 20px;
     font-size: 5vw;
 }	
+
+/*fieldset
+{
+	border: 1px hidden white;
+	
+}*/
+#resetform
+{
+	position: relative;
+    left: 30px;
+}
+form
+{
+	margin-bottom: 10%;
+}
