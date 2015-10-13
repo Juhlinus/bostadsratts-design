@@ -16,8 +16,21 @@ $(document).ready(function() {
 	});
 	$("#contact_email").on("input", function() {
 		inputEmail = $(this);
-		var inputText = inputEmail.val();
-		validate(inputEmail, inputText);
+		console.log(typeof inputEmail);
+		var regX = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+		var regxresult = inputEmail.val().match(regX);
+		
+		if(regxresult ===null)
+		{
+			inputEmail.removeClass("valid").addClass("invalid");
+		}
+		else
+		{
+			var inputText = inputEmail.val();
+			validate(inputEmail, inputText);
+		}
+		
+		
 	});
 	$("#contact_que").on("input", function() {
 		inputQue = $(this);
