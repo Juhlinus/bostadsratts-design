@@ -97,6 +97,7 @@ nav {
 	background-color: #F2F2F2;
 	z-index: 3;
 	left: -50%;
+	overflow-y: scroll;
 }
 
 nav > ul {
@@ -246,4 +247,16 @@ input.valid, textarea.valid{
 form
 {
 	margin-bottom: 10%;
+}
+
+#header-image {
+    background-image: url("../pics/sky.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: 100% calc(100% + 48px);
+}
+
+.center {
+	margin: 0 auto;
+	float: none;
 }
