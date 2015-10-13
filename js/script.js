@@ -11,26 +11,14 @@ $(document).ready(function() {
 	});
 	$("#contact_tel").on("input", function() {
 		inputTel = $(this);
-		var telForm = inputTel.val();
-		validate(inputTel, telForm);
+		var regX = /^\+?[0-9- ]+$/;
+		regxit(regX, inputTel);
+		
 	});
 	$("#contact_email").on("input", function() {
 		inputEmail = $(this);
-		console.log(typeof inputEmail);
 		var regX = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-		var regxresult = inputEmail.val().match(regX);
-		
-		if(regxresult ===null)
-		{
-			inputEmail.removeClass("valid").addClass("invalid");
-		}
-		else
-		{
-			var inputText = inputEmail.val();
-			validate(inputEmail, inputText);
-		}
-		
-		
+		regxit(regX,inputEmail);
 	});
 	$("#contact_que").on("input", function() {
 		inputQue = $(this);
@@ -61,23 +49,31 @@ $(document).ready(function() {
 		else {
 			console.log("Vi kontaktar dig inom 3 arbetsdagar.");
 		}
-
 	});
-
 	function validate(input, text) {
-		if (text) { //------------------------- if the user typed anything
+		if (text) { 								//------------------------- if the user typed anything
 			input.removeClass("invalid").addClass("valid");
-
 		}
 		else {
 			input.removeClass("valid").addClass("invalid");
-
 		}
 	}
-		$("#resetform").click(function() {
-			$("input, textarea").removeClass()
-			
+	$("#resetform").click(function() {
+		$("input, textarea").removeClass()
 	});
+	
+	function regxit (regxresult, input) //------------------------ regxresult is replaced by regX ex on line 21
+	{
+		var gris = input.val().match(regxresult);
+
+		if (gris === null) {
+			input.removeClass("valid").addClass("invalid");
+		}
+		else {
+			var inputText = input.val();
+			validate(input, inputText);
+		}
+	}
 
 
 });
