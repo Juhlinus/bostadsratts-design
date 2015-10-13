@@ -1,8 +1,79 @@
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
 html, body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -13,6 +84,10 @@ h1 {
 p {
 	margin: 0;
 	padding: 0;
+	font-size: 1em;
+	line-height: 1.25em;
+	margin: 1.25em 0;
+	text-align: left;
 }
 
 .fa {
@@ -81,7 +156,6 @@ p {
 	 }*/
 }
 
-
 #overlay {
 	position: absolute;
 	height: 100%;
@@ -97,6 +171,7 @@ nav {
 	background-color: #F2F2F2;
 	z-index: 3;
 	left: -50%;
+	overflow-y: scroll;
 }
 
 nav > ul {
@@ -144,10 +219,12 @@ nav > ul > li:nth-child(odd) {
 	position: relative;
 	left: 20px;
 	padding-right: 25px;
+	float: left;
 }
 
 .header > h1 {
 	display: inline-block;
+	font-size: 6vw;
 }
 
 .overlay-on {
@@ -201,7 +278,9 @@ nav > ul > li:nth-child(odd) {
 .header {
 	background-color: black;
 	color: white;
+	text-align: center;
 }
+
 label {
 	color: blue;
 }
@@ -228,6 +307,39 @@ input.valid, textarea.valid{
 /*input.standard, textarea.standard{
 	border: 3px solid blue;
 }
+
+/*fieldset
+{
+	border: 1px hidden white;
+	
+}*/
+#resetform
+{
+	position: relative;
+    left: 30px;
+}
+form
+{
+	margin-bottom: 10%;
+}
+
+#header-image {
+    background-image: url("../pics/sky.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: 100% calc(100% + 48px);
+}
+
+.center {
+	margin: 0 auto;
+	float: none;
+	vertical-align: middle;
+}
+
+.center > h1 {
+    margin-top: 20px;
+    font-size: 5vw;
+}	
 
 /*fieldset
 {
