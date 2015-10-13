@@ -360,9 +360,35 @@ form
 form
 {
 	margin-bottom: 10%;
+}
 #header > h1
 {
 	font-weight: bolder;
     color: blue;
     text-align: center;
 }
+ul
+{
+	list-style-type: none;
+}
+#blink ul li
+{
+	padding-top: 15px;
+}
+#blink >.divide-25
+{
+	padding: 0;
+}
+#blink >.divide-25 > ul
+{
+	font-size: 1.5em;
+	line-height: 1.25em;
+	text-align: left;
+	word-wrap:break-word;
+}
+#blink >.divide-25 > ul > .left-center
+{
+	text-align: center;
+	
+}
+
