@@ -376,7 +376,8 @@ ul
 }
 #blink ul li
 {
-	padding-top: 15px;
+	padding-top: 5px;
+	
 }
 #blink >.divide-25
 {
@@ -384,15 +385,22 @@ ul
 }
 #blink >.divide-25 > ul
 {
-	font-size: 1.5em;
-	line-height: 1.25em;
+	
+	font-size: 10px;
 	text-align: left;
 	word-wrap:break-word;
+	padding: 0;
+    padding-left: 10px;
+    color: white;
 }
 #blink >.divide-25 > ul > .left-center
 {
 	text-align: center;
 	
 }
-
+footer
+{
+	background-color: #2F3034;
+	height: 300px;
+}
 
