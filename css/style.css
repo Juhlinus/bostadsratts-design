@@ -377,27 +377,27 @@ ul
 #blink ul li
 {
 	padding-top: 5px;
-	color: #F3EDE1;
+	color: #8D8080;
 	
 }
-#blink >.divide-25
-{
-	padding: 0;
-}
+
 #blink >.divide-25 > ul
 {
 	
 	font-size: 15px;
-	text-align: left;
+	
 	word-wrap:break-word;
 	padding: 0;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     color: white;
+    display: inline-block;
     
 }
+
 #blink >.divide-25 > ul > .left-center
 {
 	text-align: center;
+	padding-left: 100px;
 	
 }
 footer
@@ -408,14 +408,18 @@ footer
 }
 a:link
 {
-	color: #F3EDE1;
+	color: #8D8080;
 	text-decoration: none
 }
 a:visited 
 {
-    color: #F3EDE1;
+    color: #8D8080;
 }
 a:hover
 {
 	text-decoration: underline;
+}
+.resize-left
+{
+	padding-left: 50px;
 }
