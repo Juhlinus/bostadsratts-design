@@ -407,6 +407,10 @@ footer
 	height: 250px;
 	
 }
+.resize-left
+{
+	padding-left: 50px;
+}
 
 .post-body > p {
 	font-size: 3vw;
