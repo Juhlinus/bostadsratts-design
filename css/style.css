@@ -378,6 +378,7 @@ ul
 #blink ul li
 {
 	padding-top: 5px;
+	color: #F3EDE1;
 	
 }
 #blink >.divide-25
@@ -387,12 +388,13 @@ ul
 #blink >.divide-25 > ul
 {
 	
-	font-size: 10px;
+	font-size: 15px;
 	text-align: left;
 	word-wrap:break-word;
 	padding: 0;
     padding-left: 10px;
     color: white;
+    
 }
 #blink >.divide-25 > ul > .left-center
 {
@@ -402,7 +404,8 @@ ul
 footer
 {
 	background-color: #2F3034;
-	height: 300px;
+	height: 250px;
+	
 }
 
 .post-body > p {
@@ -426,4 +429,17 @@ footer
 
 .post-body li {
 	word-wrap: break-word;
+}
+a:link
+{
+	color: #F3EDE1;
+	text-decoration: none
+}
+a:visited 
+{
+    color: #F3EDE1;
+}
+a:hover
+{
+	text-decoration: underline;
 }
