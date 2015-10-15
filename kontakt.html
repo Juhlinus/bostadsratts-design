@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Här är det jag som bestämmer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/mobile.css" rel="stylesheet" media="screen and (max-width: 480px)">
-    <link rel="shortcut icon" href="../pics/favicon.jpg">
-    <link rel="icon" sizes="192x192" href="../pics/favicon.jpg">
-    <link rel="icon" sizes="16x16" href="../pics/favicon.jpg"> <!-- accepted size for firefox-->
-    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen and (min-width:480px)" href="css/responsive.css">	
+	<title>Föreningen | BRF Löparen 3</title>
 </head>
-
 <body>
-    <div class="divide-100 contactpic"></div>
-    <div id="wrapper">
-        <div id="container">
-            <div id="header">
-                
-                <h1>Kontakta oss!</h1>
-            </div>
-            
-            <div>
-                <form id="contact" action="" method="post">
+	<div id="wrapper">
+		<nav class="nav-off">
+			<ul>
+				<li><a href="index.html">Hem</a><span class="fa fa-times cross"></span></li>
+				<li><a href="forening.html">Förening</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="lagenhet.html">Din Lägenhet</a></li>
+				<li><a href="utrymmen.html">Gemensamma Utrymmen</a></li>
+				<li><a href="fragor.html">Vanliga frågor</a></li>
+				<li><a href="historik.html">Historik</a></li>
+				<li><a href="maklarinfo.html">Mäklarinfo</a></li>
+			</ul>
+		</nav>
+		<div id="overlay" class="overlay-on display-off"></div>
+		<div class="divide-100 header">
+			<div class="fa fa-bars bars"></div>
+			<h1>BRF Löparen 3</h1>
+		</div>
+		<div id="header-image">
+		</div>
+		<main class="divide-100 top-margin">
+			<div class="center divide-70">
+				<article>
+				<h1>Kontakta Oss!</h1>
+				<form id="contact" action="" method="post">
                     <fieldset>
                         <p><h4>Ärendetyp</h4></p>
                         <select name="errand">
@@ -62,59 +74,53 @@
                     <input type="reset" name="reset" value="Återställ" id="resetform">
                 </fieldset>
             </form>
-            
-            
-        </div>
-    </div>
-    
-    <footer id="blink" class="divide-100  resize-left">
-        <div class="divide-25">
-            <ul>
-                <li><h3>Senaste inläggen</h3></li>
-                <li><a href="" class="link">Expeditionen - nya öppettider</a></li>
-                <li><a href="" class="link">ÅVS - Återvinningscentralen Skogås</a></li>
-                <li><a href="" class="link">Nytt Informationsblad utdelat 2014-12-13</a></li>
-                <li><a href="" class="link">HSB Södertörn förvaltningskontor i Trångsund</a></li>
-                <li><a href="" class="link">Expeditionen har tagit sommarlov</a></li>
-            </ul>
-        </div>
-        <div class="divide-25">
-            <ul>
-                <div class="left-center">
-                    <li><h3>Arkiv</h3></li>
-                    <li><a href="">2015</a></li>
-                    <li><a href="">2014</a></li>
-                    <li><a href="">2013</a></li>
-                    <li><a href="">2012</a></li>
-                    <li><a href="">2011</a></li>
-                </div>
-            </ul>
-        </div>
-        <div class="divide-25">
-            <ul>
-                <li><h3>Kategorier</h3></li>
-                <li><a href="">Allmänt</a></li>
-                <li><a href="">Viktigt</a></li>
-                <li><a href="">Okategoriserade</a></li>
-            </ul>
-        </div>
-        <div class="divide-25">
-            <ul>
-                <li><h3>Meta</h3></li>
-                <li><a href="http://brfloparen3.se/wp-login.php">Logga in</a></li>
-                <li><a href="www.google.se">Inlägg via RSS</a></li>
-                <li><a href="">Kommentarer via RSS</a></li>
-                <li><a href="">Wordpress.org</a></li>
-            </ul>
-        </div>
-    </footer>
-</div>
-
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-
-
+				</article>
+			</div>
+		</main>
+		
+		<footer id="blink" class="divide-100  resize-left">
+			<div class="divide-25">
+				<ul>
+					<li><h3>Senaste inläggen</h3></li>
+					<li><a href="" class="link">Expeditionen - nya öppettider</a></li>
+					<li><a href="" class="link">ÅVS - Återvinningscentralen Skogås</a></li>
+					<li><a href="" class="link">Nytt Informationsblad utdelat 2014-12-13</a></li>
+					<li><a href="" class="link">HSB Södertörn förvaltningskontor i Trångsund</a></li>
+					<li><a href="" class="link">Expeditionen har tagit sommarlov</a></li>
+				</ul>
+			</div>
+			<div class="divide-25">
+				<ul>
+					<div class="left-center">
+						<li><h3>Arkiv</h3></li>
+						<li><a href="">2015</a></li>
+						<li><a href="">2014</a></li>
+						<li><a href="">2013</a></li>
+						<li><a href="">2012</a></li>
+						<li><a href="">2011</a></li>
+					</div>
+				</ul>
+			</div>
+			<div class="divide-25">
+				<ul>
+					<li><h3>Kategorier</h3></li>
+					<li><a href="">Allmänt</a></li>
+					<li><a href="">Viktigt</a></li>
+					<li><a href="">Okategoriserade</a></li>
+				</ul>
+			</div>
+			<div class="divide-25">
+				<ul>
+					<li><h3>Meta</h3></li>
+					<li><a href="http://brfloparen3.se/wp-login.php">Logga in</a></li>
+					<li><a href="www.google.se">Inlägg via RSS</a></li>
+					<li><a href="">Kommentarer via RSS</a></li>
+					<li><a href="">Wordpress.org</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
 </body>
-
 </html>
-
