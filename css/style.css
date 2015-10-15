@@ -209,7 +209,7 @@ nav > ul > li:nth-child(odd) {
 	left: 20px;
 	padding-right: 25px;
 	float: left;
-	color: black;
+	color: white;
 	top: 8px;
 }
 
@@ -270,7 +270,7 @@ nav > ul > li:nth-child(odd) {
 }
 
 .header {
-	background-color: white;
+	background-color: #2F3034;
 	color: white;
 	text-align: center;
 	height: 48px;
@@ -430,4 +430,7 @@ a:hover
 		font-size: 4vw;
 	}
 }
-
+.headline
+{
+	text-align: center;
+}
