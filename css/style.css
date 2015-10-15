@@ -356,7 +356,6 @@ ul
 
 	
 	font-size: 10px;
-	
 	word-wrap:break-word;
 	padding: 0;
     padding-left: 8px;
@@ -368,7 +367,6 @@ ul
 #blink >.divide-25 > ul > .left-center
 {
 	text-align: center;
-
 	padding-left: 30px;
 	
 }
@@ -377,10 +375,7 @@ footer
 	background-color: #2F3034;
 	height: 100%;
 }
-.resize-left
-{
-	padding-left: 50px;
-}
+
 
 .post-body > p {
 	font-size: 3vw;
@@ -417,10 +412,6 @@ a:hover
 {
 	text-decoration: underline;
 }
-.resize-left
-{
-	padding-left: 50px;
-}
 
 .divide-70 {
 	width: 100%;
@@ -435,3 +426,4 @@ a:hover
 		font-size: 4vw;
 	}
 }
+
