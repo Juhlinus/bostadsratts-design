@@ -458,3 +458,13 @@ a:hover
 .divide-70 {
 	width: 100%;
 }
+
+@media all and (orientation:landscape) {
+    .fa.bars {
+    	font-size: 5vw;
+    }
+
+    .header > h1 {
+    	font-size: 4vw;
+    }
+}

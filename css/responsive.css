@@ -50,3 +50,11 @@ nav > ul > li {
 nav > ul > li:nth-child(odd) {
 	background-color: transparent;
 }
+
+.post-body > p {
+	font-size: 2vw;
+}
+
+.post-footer > p {
+	font-size: 1vw;
+}
