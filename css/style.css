@@ -354,21 +354,23 @@ ul
 #blink >.divide-25 > ul
 {
 
-	font-size: 15px;
-
+	
+	font-size: 10px;
+	
 	word-wrap:break-word;
 	padding: 0;
-	/*padding-left: 10px;*/
-	color: white;
-	display: inline-block;
-
+    padding-left: 8px;
+    color: white;
+    display: inline-block;
+    
 }
 
 #blink >.divide-25 > ul > .left-center
 {
 	text-align: center;
-	padding-left: 100px;
 
+	padding-left: 30px;
+	
 }
 footer
 {
