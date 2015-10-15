@@ -222,12 +222,14 @@ nav > ul > li:nth-child(odd) {
 	left: 20px;
 	padding-right: 25px;
 	float: left;
+	color: black;
+	top: 8px;
 }
 
 .header > h1 {
 	display: inline-block;
 	font-size: 6vw;
-	margin-top: 0.75%;
+	margin-top: 10px;
 	color: black;
 }
 
@@ -284,6 +286,7 @@ nav > ul > li:nth-child(odd) {
 	background-color: white;
 	color: white;
 	text-align: center;
+	height: 48px;
 }
 
 label {
