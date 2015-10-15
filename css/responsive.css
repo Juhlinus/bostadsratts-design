@@ -1,5 +1,52 @@
-/*
-h1 {
-	color: black;
+/**
+ * Desktop CSS overrides
+ */
+
+.divide-70 {
+	width: 70%;
 }
-*/
+
+.fa.bars {
+	display: none;
+}
+
+.fa.cross {
+	display: none;
+}
+
+.header {
+	text-align: left;
+	padding-left: 15px;
+	height: 50px;
+}
+
+.header > h1 {
+	font-size: 2em;
+	padding-top: 5px;
+	margin: 0;
+}
+
+.nav-off {
+	height: 50px;
+	width: auto;
+	left: auto;
+	overflow-y: auto;
+	background-color: transparent;
+    position: relative;
+    float: right;
+    top: 64px;
+    margin-top: -50px;
+}
+
+nav > ul > li {
+	background-color: transparent;
+	padding: 0;
+	display: inline;
+	font-size: 1em;
+	padding-left: 7.5px;
+	padding-right: 7.5px;
+}
+
+nav > ul > li:nth-child(odd) {
+	background-color: transparent;
+}

@@ -228,6 +228,7 @@ nav > ul > li:nth-child(odd) {
 	display: inline-block;
 	font-size: 6vw;
 	margin-top: 0.75%;
+	color: black;
 }
 
 .overlay-on {
@@ -280,7 +281,7 @@ nav > ul > li:nth-child(odd) {
 }
 
 .header {
-	background-color: black;
+	background-color: white;
 	color: white;
 	text-align: center;
 }
@@ -449,4 +450,8 @@ a:hover
 .resize-left
 {
 	padding-left: 50px;
+}
+
+.divide-70 {
+	width: 100%;
 }
