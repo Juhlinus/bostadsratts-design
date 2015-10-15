@@ -390,6 +390,7 @@ footer
 	padding-top: 1vw;
 	padding-right: 2.5vw;
 	padding-bottom: 1vw;
+	max-width: 30vw;
 }
 
 .post-body ul {
@@ -398,6 +399,9 @@ footer
 
 .post-body li {
 	word-wrap: break-word;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 a:link
 {
