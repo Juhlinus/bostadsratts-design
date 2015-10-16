@@ -140,7 +140,7 @@ p {
 	background-position: center 50%; 
 }
 .resize {
-	background-image: url("../pics/sky.jpg");
+	background-image: url("../pics/autumn2.jpg");
 	height: 200px;
 	background-size: cover;
 	background-position: center 90%; 
@@ -306,7 +306,7 @@ form
 }
 
 #header-image {
-	background-image: url("../pics/sky.jpg");
+	background-image: url("../pics/autumn2.jpg");
 	height: 350px;
 	background-size: cover;
 	background-position: 100% calc(100% + 48px);
