@@ -58,3 +58,8 @@ nav > ul > li:nth-child(odd) {
 .post-footer > p {
 	font-size: 1vw;
 }
+
+.top-margin {
+	width: 100%;
+	padding-right: 0px;
+}
