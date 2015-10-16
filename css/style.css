@@ -267,6 +267,8 @@ nav > ul > li:nth-child(odd) {
 	/* margin-top: 5px; */
 	padding-left: 10px;
 	background-color: #F3EDE1;
+	width: 90%;
+	padding-right: 20px;
 }
 
 .header {
