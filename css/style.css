@@ -217,7 +217,7 @@ nav > ul > li:nth-child(odd) {
 	display: inline-block;
 	font-size: 6vw;
 	margin-top: 10px;
-	color: black;
+	color: white;
 }
 
 .overlay-on {
@@ -265,7 +265,7 @@ nav > ul > li:nth-child(odd) {
 
 .top-margin {
 	/* margin-top: 5px; */
-	padding-left: 15px;
+	padding-left: 10px;
 	background-color: #F3EDE1;
 }
 

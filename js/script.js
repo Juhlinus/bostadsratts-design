@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var inputQue;
 	var inputEmail;
 
-	$("#contact_name").on("input", function() {
+	$("#contact_name").on("input", function() { //------------------------- User type in name
 		inputName = $(this);
 		var nameForm = inputName.val();
 		validate(inputName, nameForm);
