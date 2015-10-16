@@ -209,7 +209,7 @@ nav > ul > li:nth-child(odd) {
 	left: 20px;
 	padding-right: 25px;
 	float: left;
-	color: black;
+	color: white;
 	top: 8px;
 }
 
@@ -217,7 +217,7 @@ nav > ul > li:nth-child(odd) {
 	display: inline-block;
 	font-size: 6vw;
 	margin-top: 10px;
-	color: black;
+	color: white;
 }
 
 .overlay-on {
@@ -265,19 +265,19 @@ nav > ul > li:nth-child(odd) {
 
 .top-margin {
 	/* margin-top: 5px; */
-	padding-left: 15px;
+	padding-left: 10px;
 	background-color: #F3EDE1;
 }
 
 .header {
-	background-color: white;
+	background-color: #2F3034;
 	color: white;
 	text-align: center;
 	height: 48px;
 }
 
 label {
-	color: blue;
+	color: #5A5A5A;
 }
 .error_show{
 	color: red;
@@ -364,10 +364,10 @@ ul
     
 }
 
-#blink >.divide-25 > ul > .left-center
+#blink >.left-center
 {
 	text-align: center;
-	padding-left: 30px;
+
 	
 }
 footer
@@ -430,4 +430,7 @@ a:hover
 		font-size: 4vw;
 	}
 }
-
+.headline
+{
+	text-align: center;
+}
