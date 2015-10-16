@@ -44,7 +44,7 @@ $(document).ready(function() {
 		validate(inputQue, inputQue.val());
 		if (inputName.hasClass("invalid") || inputTel.hasClass("invalid") || inputQue.hasClass("invalid") || inputEmail.hasClass("invalid")) {
 			event.preventDefault();
-			console.log("hejsan");
+			console.log("Not valid");
 		}
 		else {
 			console.log("Vi kontaktar dig inom 3 arbetsdagar.");
