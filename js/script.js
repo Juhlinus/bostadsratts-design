@@ -47,7 +47,7 @@ $(document).ready(function() {
 			console.log("Not valid");
 		}
 		else {
-			console.log("Vi kontaktar dig inom 3 arbetsdagar.");
+			alert("Vi kontaktar dig inom 3 arbetsdagar.");
 		}
 	});
 	function validate(input, text) {
